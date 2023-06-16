@@ -13,35 +13,53 @@ public class MatrixAddFour {
     sum = new int[rows][cols];
 
     System.out.println("Enter matrix One: ");
-    for (int i = 0; i < rows; i++) {
-      for(int j = 0; j < cols; j++) {
-        matrix_1[i][j] = input.nextInt();
-      }
-    }
+    for(int i=0; i<rows;i++)
+         {            
+            for(int j=0; j<cols;j++)
+            {
+                matrix_1[i][j]=input.nextInt();
+            }
+         }
     System.out.println("Enter matrix Two: ");
-    for (int i = 0; i < rows; i++) {
-      for(int j = 0; j < cols; j++) {
-        matrix_2[i][j] = input.nextInt();
-      }
-    }
-
-    for (int i = 0; i < rows; i++) {
-      for(int j = 0; j < cols; j++) {
-        sum[i][j]=matrix_2[i][j] + matrix_1[i][j];
-      }
-    }
-    
-
-
-
-  //  System.out.println(" matrix One: ");
-  //   for (int i = 0; i < rows; i++) {
-  //     for(int j = 0; j < cols; j++) {
-  //       System.out.println(matrix_1[i][j]+"\t");
-  //       //System.out.println("");
-  //     }
-  //     System.out.println();
-  //   } 
-
-   }
+    for(int i=0; i<rows;i++)
+         {            
+            for(int j=0; j<cols;j++)
+            { 
+                matrix_2[i][j]=input.nextInt();
+            }
+         }
+    System.out.print("\nData you entered into matrix One: \n");
+    for(int i=0; i<rows;i++)
+         {            
+            for(int j=0; j<cols;j++)
+            {
+            System.out.print(matrix_1[i][j]+"        ");
+            }
+            System.out.println();
+        }
+    System.out.print("\nData you entered into matrix Two: \n");
+    for(int i=0; i<rows;i++)
+         {            
+            for(int j=0; j<cols;j++)
+            {
+            System.out.print(matrix_2[i][j]+"        ");
+            }
+            System.out.println();
+        }
+    for(int i=0; i<rows;i++)
+         {            
+            for(int j=0; j<cols;j++)
+            { 
+                sum[i][j]=matrix_2[i][j] + matrix_1[i][j];
+            }
+         }
+         System.out.println("Sum of the two enterd matrix is:");
+         for(int i=0; i<rows;i++)
+         {            
+            for(int j=0; j<cols;j++)
+            {
+            System.out.print(sum[i][j]+"        ");
+            }
+            System.out.println();
+        }
 }
