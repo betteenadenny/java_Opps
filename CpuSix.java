@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class cpu {
+public class CpuSix {
     double price;
     cpu(double price){
         this.price=price;
